@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parallax {
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .intro {
+            background-image: url(3.jpg);
+        }
+
+        .cta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .title {
+            font-size: 4em;
+            letter-spacing: 20px;
+            font-family: fantasy;
+            color: white;
+        }
+
+        .content {
+            background-color: white;
+            height: 100vh;
+        }
+        .text-conten h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -200%);
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 4em;
+            letter-spacing: 20px;
+            font-family: fantasy;
+            z-index: 1; /* Ensure text is above the overlay */
+        }
+        .text-conten p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 1em;
+            letter-spacing: 10px;
+            font-family: fantasy;
+            z-index: 1; /* Ensure text is above the overlay */
+        }
+        .footer {
+            position: relative;
+            overflow: hidden;
+        }
+
+        #Trailer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(70%);
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="parallax intro">
+        <div class="cta">
+            <div class="title">
+                Parallax Efex & Intro Vidio !
+            </div>
+        </div>
+    </div>
+    
+    <div class="parallax content">
+        <div class="text-conten"><h1>Nature Is Amazing!</h1>
+        <p>Nature, in its unbridled beauty, stands as a testament to the extraordinary and awe-inspiring wonders that surround us. From the towering peaks of majestic mountains to the depths of the mysterious oceans, the world we inhabit is a canvas painted with breathtaking landscapes and teeming with life.</p>
+        </div>
+    </div>
+
+    <div class="parallax footer overlay">
+        <video autoplay muted id="Trailer">
+            <source src="Our Planet _ Official Trailer [HD] _ Netflix.mp4" type="video/mp4">
+        </video>
+      
+    </div>
+</body>
+</html>
